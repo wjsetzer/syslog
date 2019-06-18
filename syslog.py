@@ -55,7 +55,7 @@ def main(argv: list):
   facility = argv[4].lower()
   message = argv[5]
   
-  syslog(message, level, facility, host, port)
+  syslog(message, level, facility, (host, port))
   
 
 if __name__ == '__main__':
